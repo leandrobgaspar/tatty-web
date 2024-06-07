@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #000;
+}
+
+.Gradient {
+  background: linear-gradient(#1f1d1d, #000000);
+}
+
+.buttonNavContact {
+  background: linear-gradient(to right, #cd235e, #670a2a);
+}
+
+.buttonNavContact:hover {
+  background: linear-gradient(to right, #670a2a, #cd235e);
+}
+
+.buttonNav:hover {
+  background: linear-gradient(to right, #cd235e, #670a2a);
+}
+
+.Navbar {
+  backdrop-filter: blur(30px);
+}
+
+.Mockup {
+  background-image: url("/Carousel/mockup.png");
+  background-size: cover; /* Ajuste o tamanho da imagem conforme necessário */
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orangeIcon {
+  background: linear-gradient(to bottom, #9900ff, #fd7702);
+}
+
+.purpleIcon {
+  background: linear-gradient(to bottom, #6600ff, #9900ff);
+}
+
+.blueIcon {
+  background: linear-gradient(to bottom, #6600ff, #0099ff);
+}
+
+.Ball {
+  background: 
+    radial-gradient(circle, #fd770271, #000000) 50% 50% no-repeat;
+  opacity: 0.8; /* ajuste a opacidade conforme necessário */
+  filter: blur(5px); /* reduzi o blur para um efeito mais suave */
+}
+
+.Ball2 {
+  background: 
+    radial-gradient(circle, #9900ff6f, #000000) 50% 50% no-repeat;
+  opacity: 0.8; /* ajuste a opacidade conforme necessário */
+  filter: blur(5px); /* reduzi o blur para um efeito mais suave */
+}
+
+.GradientFooterSection {
+  background-image: radial-gradient(#4e4b4b, #000000);
+}
+
+.buttonNavMobile {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.background {
+  background-image: radial-gradient(#4e4b4b, #000000);
+}
